@@ -1,0 +1,39 @@
+<main id="mainContent">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12 pengeluaran">
+        <div class="kotak_pengeluaran">
+            <form method="post" class="form-keluar" action="/">
+                <div class="row">
+                <div class="col">
+                    <label for="jumlah"><h3>Pengeluaran : </h3></label>
+                    <input class="input-pengeluaran" type="text" name="jumlah" id="jumlah" placeholder="Rp." required>
+                </div>
+                </div>
+                <div class="row">
+                <div class="col">
+                    <label for="tanggal"><h5>Tanggal :</h5></label>
+                    <input type="date" name="tanggal" id="tanggal">
+                    
+                </div>
+                </div>
+                <div class="row">
+                    <label for=""><h5>Kategori :</h5></label>
+                    <div class="col-kategori">
+                    <input type="checkbox" name="kategori" id="kebutuhan"> Kebutuhan sehari-hari
+                    <input type="checkbox" name="kategori" id="hiburan"> Kebutuhan lain/Hiburan
+                    <input type="checkbox" name="kategori" id="tabungan"> Tabungan/Investasi
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label for="catatan"><h5>Catatan</h5></label>
+                    <textarea name="catatan" id="catatan" cols="5" rows="5" placeholder="tulis disini ..." required></textarea>
+                </div>
+                <button type="submit" id="buttonPengeluaran" class="btn-pengeluaran">Simpan</button>
+                </form>
+        </div>
+        </div>
+    </div>
+</div>
+</main>
