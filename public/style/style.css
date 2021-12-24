@@ -1,55 +1,316 @@
-@media screen and (max-width: 520px) {
-    #content,
-   aside {
-       width: 100%;
-       margin: 0;
-       margin-bottom: 20px;
-   }
-   .daftar-konten,
-   .masuk-konten,
-   .tentang-konten{
-       width: 100%;
-       margin: 0;
-   }
-   .login-container {
-       margin-top: 20px;
-   }
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Salsa', cursive;
+    font-size: 16px;
 }
 
-@media screen and(min-width: 750px) {
-    .pengeluaran{
-        margin-bottom: 50%;
-    }
+.skip-link {
+    position: absolute;
+   top: -40px;
+   left: 0;
+   background-color: #bf1722;
+   color: white;
+   padding: 8px;
+   z-index: 100;
+}
+.skip-link:focus {
+    top: 0;
+ }
+
+.head_bar {
+    padding: 12px;
+    display: flex;
+    background: #2FDD92;
+    text-transform: uppercase;
+}
+.navbar{
+    background-color: #2FDD92;
+}
+.navbar-toggler{
+    background-color: #dfded7;
+    font-size: 32px;
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+.user{
+    width: 45px;
+    height: 45px;
+    margin-right: 20px;
 }
 
-/* @media screen and(max-width:768px) {
-    
-} */
-
-@media screen and (max-width: 850px) {
-    #content,
-    aside {
-        width: 80%;
-        padding: 0;
-        margin-left: 12%;
-        margin-right: 12%;
-        margin-bottom: 20px;
-    }
-
-    #content{
-        width: 75%;
-    }
-    .gambar-daftar{
-        width: 90%;
-        height: 440px;
-    }
+.nav-link{
+    color:#1E5128;
+    margin-left: 25px;
+}
+.nav-link:hover{
+    color: #FBF46D;
+}
+.logo{
+    cursor: pointer;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 35%;
+}
+.navbar{
+    background-color: #2FDD92;
 }
 
-@media screen and (max-width: 991px) {
-    .col-lg-4{
-        width: 100%;
-    }
-    .pengeluaran{
-        margin-bottom: 10%;
-    }
+main {
+    padding: 16px;
+    margin:10px;
+}
+
+.login-container {
+    margin-top: 40px;
+}
+
+.daftar-container{
+    margin: 30px;
+}
+
+#content {
+    float: left;
+    width: 40%;
+}
+
+.content-image {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 6px 7px 0 0 rgba(0, 0, 0, 0.2);
+}
+.gambar-daftar{
+    width: 90%;
+    height: 487px;
+}
+
+aside {
+    float: right;
+    width: 60%;
+}
+
+.content > img {
+    border-radius: 10%;
+    border: 1px solid black;
+    margin: auto;
+}
+
+.daftar-konten,
+.tentang-konten{
+    border: 1px solid black;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 6px 7px 0 0 rgba(0, 0, 0, 0.2);
+}
+.masuk-konten{
+    border: 1px solid black;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 0;
+    border-radius: 10px;
+
+    box-shadow: 6px 7px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.btn-masuk {
+    margin: 16px 0 16px 0;
+    padding: 5px 25px;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: #FBF46D;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.btn-masuk:active {
+    color: #000;
+    background-color: transparent;
+    border: 1px solid #FBF46D;
+}
+
+.btn-daftar {
+    margin: 16px 0 16px 0;
+    padding: 5px 25px;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: #FBC26D;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.btn-daftar:active {
+    color: #000;
+    background-color: transparent;
+    border: 1px solid #FBC26D;
+}
+
+.form-label{
+    font-weight: bold;
+}
+
+.input-container {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  
+  .icon {
+    padding: 10px;
+    background: #FBF46D;
+    color: black;
+    min-width: 50px;
+    text-align: center;
+    padding-top: 15px;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+  }
+
+.saldo{
+    display: flex;
+}
+
+.tambah{
+    background-color: #dfded7;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.tampil-saldo > pemasukanList {
+    background: #7F7FD5; 
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+    background: linear-gradient(to left, #91EAE4, #86A8E7, #9292e4);
+    color: rgb(71, 69, 69);
+    padding: 8px 16px 16px 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.utama,
+.tabungan,
+.lainnya {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.kotak {
+    border: 2px solid black;
+    padding: 10px;
+    margin-top: 10px;
+    height: 100%;
+    background-color: #FBF46D;
+}
+
+.top-content{
+    display: flex;
+    text-align: center;
+}
+
+.text{
+    margin-left: 10%;
+}
+.histori{
+    border: 2px solid black;
+    display: flex;
+    padding: 10px 0;
+}
+.kotak_pengeluaran {
+    border: 3px solid black;
+    padding: 20px;
+    margin-top: 30px;
+    height: 100%;
+}
+
+.input-pengeluaran{
+    background-color: #dfded7;
+}
+
+.col-kategori input {
+    margin-left: 20px;
+}
+
+.row-catatan{
+    border: 2px solid black;
+}
+form > .row{
+    margin-bottom: 10px;
+}
+
+.btn-pengeluaran{
+    background-color: #2FDD92;
+    padding: 5px 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    margin: 5px;
+}
+
+.btn-tambah-keluar{
+    background-color: #2FDD92;
+    margin-top: 60%;
+    padding: 5px 15px;
+    width: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    margin: 5px;
+}
+.kotak_tambah_pengeluaran{
+    padding: 20px;
+    margin-top: 30px;
+    height: 100%;
+}
+
+.keluar-kategori{
+    border-bottom: 1px solid black;
+}
+
+.tentang-konten{
+    background-color: #FBF46D;
+    text-align: justify;
+    padding: 17% 5%;
+}
+.tentang-container{
+    margin-top: 20px;
+}
+
+.pengeluaran{
+    margin-bottom: 8%;
+}
+
+.daftar-link{
+    margin-bottom: 10%;
+}
+
+footer {
+	background-color: #2FDD92;
+	text-align: center;
+    margin-top: 40px;
+    padding: 15px;
+    width: 100%;
+    position: fixed;
+    display: block;
+    bottom: 0;
 }
