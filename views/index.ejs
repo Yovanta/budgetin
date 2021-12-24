@@ -1,0 +1,159 @@
+  <main id="mainContent">
+    <div class="saldo">
+      <button type="button" class="tambah" data-bs-toggle="modal" data-bs-target="#exampleModal">+</button>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Masukkan Jumlah Saldo</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form method="post" id="inputSaldo" action="/">
+                <label for="saldo_pemasukan"></label>
+                <input type="number" id="saldo_pemasukan" name="saldo_pemasukan" required>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                <button type="submit" class="btn btn-primary" id="">Simpan</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+          <h3>Saldo : Rp. 1000000
+      </h3>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+          <div class="col-lg-4 col-md-1 mt-3">
+            <div class="kotak">
+              <div class="top-content">
+                <img class="utama offset-md-1" src="./images/utama.png" alt="">
+                <div class="text col-lg-7 col-sm-5 offset-md-1">
+                  <h2>50%</h2>
+                  <h5>Kebutuhan Sehari-hari</h5>
+                </div>
+              </div>
+              <div class="histori">
+
+                  <div id="tanggal"></div>
+                  <div id="jumlah"></div>
+                  <div id="catatan"></div>
+              </div>
+              <div class="saldo-kategori row mt-2">
+                <div class="col-6">
+                  <p>Saldo</p>
+                <p>Pengeluaran</p>
+                </div>
+                <div class="col-6">
+                  <p id="saldo-kebutuhan">Rp.500000</p>
+                  <p class="keluar-kategori">Rp.</p>
+                  <p>Rp.500000</p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-1 mt-3">
+          <div class="kotak">
+            <div class="top-content">
+              <img class="lainnya offset-md-1" src="./images/lainnya.png" alt="">
+              <div class="text col-lg-7 col-sm-5 offset-md-1">
+                <h2>30%</h2>
+                <h5>Kebutuhan Lain / Hiburan</h5>
+              </div>
+            </div>
+            <div class="histori">
+              <div id="tanggal"></div>
+              <div id="jumlah"></div>
+              <div id="catatan"></div>
+            </div>
+            <div class="saldo-kategori row mt-2">
+              <div class="col-6">
+                <p>Saldo</p>
+              <p>Pengeluaran</p>
+              </div>
+              <div class="col-6">
+                <p id="saldo-hiburan">Rp.300000</p>
+                <p class="keluar-kategori">Rp.</p>
+                <p>Rp.300000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-1 mt-3">
+          <div class="kotak">
+            <div class="top-content">
+              <img class="tabungan offset-md-1" src="./images/tabungan.png" alt="">
+              <div class="text col-lg-7 col-sm-5 offset-md-1">
+                <h2>20%</h2>
+                <h5>Tabungan / investasi</h5>
+              </div>
+            </div>
+            <div class="histori">
+              <div id="tanggal"></div>
+              <div id="jumlah"></div>
+              <div id="catatan"></div>
+            </div>
+            <div class="saldo-kategori row mt-2">
+              <div class="col-6">
+                <p>Saldo</p>
+              <p>Pengeluaran</p>
+              </div>
+              <div class="col-6">
+                <p id="saldo-tabungan">Rp.200000</p>
+                <p class="keluar-kategori">Rp.</p>
+                <p>Rp.200000</p>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12 pengeluaran">
+          <div class="kotak_tambah_pengeluaran">
+            <a href="/add"><button class="btn-tambah-keluar">Tambah Pengeluaran</button></a>
+            </div>
+        </div>
+      </div>
+      
+      <!-- <div class="row">
+        <div class="col-sm-12 pengeluaran">
+          <div class="kotak_pengeluaran">
+              <form method="post" class="form-keluar" action="/">
+                <div class="row">
+                  <div class="col">
+                    <label for="jumlah"><h3>Pengeluaran : </h3></label>
+                    <input class="input-pengeluaran" type="text" name="jumlah" id="jumlah" placeholder="Rp." required>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <label for="tanggal"><h5>Tanggal :</h5></label>
+                    <input type="date" name="tanggal" id="tanggal">
+                    
+                  </div>
+                  </div>
+                  <div class="row">
+                    <label for=""><h5>Kategori :</h5></label>
+                    <div class="col-kategori">
+                      <input type="checkbox" name="kategori" id="kebutuhan"> Kebutuhan sehari-hari
+                      <input type="checkbox" name="kategori" id="hiburan"> Kebutuhan lain/Hiburan
+                      <input type="checkbox" name="kategori" id="tabungan"> Tabungan/Investasi
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <label for="catatan"><h5>Catatan</h5></label>
+                    <textarea name="catatan" id="catatan" cols="5" rows="5" placeholder="tulis disini ..." required></textarea>
+                  </div>
+                  <button type="submit" id="buttonPengeluaran" class="btn-pengeluaran">Simpan</button>
+                </form>
+          </div>
+        </div> -->
+      <!-- </div> -->
+
+    </div>
+  </main>
+  </body>
+</html>
