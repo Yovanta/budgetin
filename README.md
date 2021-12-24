@@ -11,8 +11,8 @@ Originally Developed By :
 <ol>
   <li> npm install </li>
   <li> npm run build </li> 
-  <li> npm run start-dev </li>  
-  <li> open your browser >> localhost:8080/ </li>  
+  <li> npm run test </li>  
+  <li> open your browser >> localhost:8080/masuk </li>  
 </ol>
 
 
